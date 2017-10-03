@@ -1,0 +1,64 @@
+#footerAddOn{
+	position: absolute;
+	background-image: url("../../img/ReservationPage_White.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 1;
+	margin-top:-25px;
+	height: 67px;
+	width: 100%;
+	background-color: transparent;
+	top:-40px;
+	left:0; 
+	right:0;
+}
+
+footer.navbar-default{
+	position: relative;
+	z-index: 1;
+	background-color: $rs-red;
+	border-radius: 0px;
+	border:0px;
+	padding:10% 0;
+
+
+	.list-group{
+		@media screen and (max-width: 768px){
+			margin-bottom: 9.5%;
+		}
+		.list-group-item{
+			background-color: transparent;
+			border:0px;
+			padding:0px;
+			a,p{
+				margin-bottom: 0px;
+				vertical-align: baseline;
+				line-height: 20px;
+			}
+		}
+
+		.list-group-item.social{
+			margin-top:20px;
+			span{
+				display: inline-block;
+				img{
+					width:20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+
+
+	a,p{
+		color:$rs-light;
+	}
+
+	img{
+		height: 183px;
+		@media screen and (max-width: 768px){
+			margin-bottom: 9.5%;
+		}
+	}
+}

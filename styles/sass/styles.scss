@@ -1,0 +1,202 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'navigation';
+@import 'footer';
+@import 'menu';
+@import 'restaurant';
+
+
+body{
+	position: relative;
+}
+
+#A3Logo{
+	position: absolute;
+	bottom:15px;
+	right:15px;
+	z-index: 1;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $rs-gen-font;
+}
+
+p{
+	font-family: $rs-text-font;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 23.8px;
+	word-break: break-word;
+}
+
+.header.text-left{
+	margin-top:35px;
+}
+
+.header{
+	letter-spacing: 7px;
+	font-weight: bold;
+	font-size: 19px;
+	color: $text-grey;
+	margin:0px 0px 5.82% 0px;
+}
+
+.header-narrow{
+	color: $text-grey;
+	font-size: 26px;
+	font-family: $rs-gen-font;
+	font-weight: 700;
+	margin-top:0px;
+}
+
+.header + .header-narrow{
+	margin-bottom: 10px;
+}
+
+.strong{
+	font-weight: 700;
+}
+
+.text-container{
+	padding-top:67px;
+	padding-bottom: 67px;
+	
+	p{
+		padding-bottom: 1em;
+	}
+}
+
+.main{
+	margin-top: 119.75px;
+}
+
+.bg-grey{
+	background-color: $rs-mid;
+	position: relative;
+	padding-top:67px;
+	padding-bottom: 67px;
+}
+
+.bg-white{
+	background-color: $rs-light;
+	padding-top:67px;
+	padding-bottom: 67px;
+}
+
+.bg-grey + .main{
+
+}
+
+.br-white{
+	border: 3px solid $rs-light;
+}
+
+.list-inline.social{
+	.list-group-item{
+		background-color: transparent;
+		border:0px;
+		span{
+			display:inline-block;
+			img{
+				width: 20px;
+				height: 20px;
+
+			}
+		}
+	}
+}
+
+.call-out-block{
+	.header{
+		margin-bottom: 10px;
+		font-size: 16px;
+		@media screen and(max-width: 990px){
+			margin-top: 35px;
+		}
+	}
+
+	.extra{
+		margin-top: 35px;
+	}
+
+	p{
+		&:last-child{
+			margin-top:25px;
+		}
+	}
+
+	a{
+		color: $rs-red;
+		text-decoration: none;
+		&:hover{
+			color: darken($rs-red, 15%);
+		}
+	}
+}
+
+.red-box{
+	height: 600px;
+	background-color: $rs-red;
+}
+
+
+.mr-t-75{
+	margin-top: 75px;
+}
+
+#map{
+	position: absolute;
+	width: 95%;
+	min-height: 500px;
+	top:0px;
+	left:0px;
+	right:0px;
+	margin:0 auto;
+}
+
+.map-container{
+	min-height: 500px;
+	@media screen and (max-width: 732px){
+		margin-bottom: 25px;
+	}
+}
+
+.bullet-list{
+	p{
+		font-family: $rs-text-font;
+		letter-spacing: 7px;
+		font-weight: 700;
+		padding:67px 0px 34.5px;
+
+	}
+	.fa{
+		font-size: 5px;
+		color:$rs-red;
+		line-height: 20px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.img-block{
+	padding-top:67px;
+	padding-bottom: 67px;
+	img{
+
+		@media screen and (max-width: 768px){
+			margin-top:30px;
+		}
+	}
+}
+
+
+.bg-white + iframe{
+	padding:0px;
+}
+
+iframe{
+	display: block;
+	margin:0px auto;
+	padding:30px 0;
+}

@@ -1,0 +1,18 @@
+
+		<div ng-repeat="(section, cont) in menu.menuData" class="col-xs-12 col-sm-10 col-sm-offset-1 menu-section">
+
+		<h3 ng-if="section != 'dessert'" ng-switch="section" class="text-uppercase header text-left">
+			<span ng-switch-when="soup-salad">Salads &amp; Soup</span>
+			<span ng-switch-default>{{section}}</span>
+		</h3>
+
+		<ul class="list-group menu {{section}}">
+			<li ng-repeat="item in cont" class="list-group-item">
+				<h4 class="list-group-item-heading">{{item.itemTitle}}</h4>
+				<p class="list-group-item-text">
+				<span class="desc">{{item.itemDesc}}</span>
+				<span class="badge price">${{item.itemPrice}}</span>
+				</p>
+			</li>
+		</ul>
+	</div>

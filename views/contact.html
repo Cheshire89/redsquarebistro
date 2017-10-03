@@ -1,0 +1,30 @@
+<div class="container-fluid main menu" ng-controller="menuCtrl">
+	<div class="row">
+		<div class="col-xs-12 header-holder">
+				<span class="overlay" style="background-image: url('img/bar.jpg');"></span>
+				<h1 class="text-uppercase header text-center">Contact Us</h1>
+		</div>
+	</div>
+</div>
+<div class="container bg-white">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 map-container">
+				<div id="map" init-map></div>
+			</div>
+			<div class="col-xs-12 col-md-4 call-out-block">
+				<div class="text-block">
+					<p>Located in the heart of downtown Denver, steps away from the Performing Arts Complex, Red Square Euro Bistro is an oasis in the city. A place where locals and savvy travelers alike can meet, enjoy one of our 100 frozen vodkas, and pair drinks with European inspired food.</p>
+
+					<ng-include src="'views/partials/address-list.html'"></ng-include>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="h6 header text-uppercase extra">Find Us On</h1>
+						<ng-include src="'views/partials/social-list.html'"></ng-include>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+

@@ -1,0 +1,17 @@
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 menu-section">
+
+	<h3 class="text-uppercase header text-left">Vodka Bar</h3>
+	<div ng-repeat="(section, cont) in vodka.vodkaData" class="vodka">
+		
+		<h4 class="title"><strong>{{section}}</strong></h4>
+		<ul class="list-group menu vodka">
+			<li ng-repeat="item in cont" class="list-group-item">
+				<p class="list-group-item-text">
+				<span class="desc">{{item.vodkaTitle}}</span>
+				<span class="badge priceShot">Shot: ${{item.priceShot}}</span>
+				<span class="badge price">Carafe: ${{item.priceCarafe}}</span>
+				</p>
+			</li>
+		</ul>
+	</div>
+</div>
